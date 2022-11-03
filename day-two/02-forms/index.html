@@ -11,7 +11,8 @@
 
   <form
     action="registro.html"
-    method="get"
+    method="post"
+    novalidate
   >
     <div>
       <label for="email">Email</label>
@@ -20,6 +21,7 @@
         placeholder="Add your email"
         id="email"
         name="email"
+        required
       >
     </div>
 
@@ -30,6 +32,7 @@
         placeholder="add your username"
         id="username"
         name="username"
+        required
       >
     </div>
 
@@ -40,10 +43,40 @@
         placeholder="add your password"
         id="password"
         name="password"
+        required
+        minlength="3"
       >
     </div>
 
-    <h1>Descanso 15 min! 🚀</h1>
+    <hr>
+
+    <fieldset>
+      <legend>Fav programming lang</legend>
+      <label for="js">Javascript</label>
+      <input type="radio" id="js" name="favorite" value="javascript" checked>
+      <label for="python">python 🐍</label>
+      <input type="radio" id="python" name="favorite" value="python">
+      <label for=".net">.NET</label>
+      <input type="radio" id=".net" name="favorite" value="net">
+    </fieldset>
+    <hr>
+    <fieldset>
+      <legend>Skills</legend>
+      <label for="skillJs">Javascript</label>
+      <input type="checkbox" id="skillJs" name="skills" value="javascript">
+      <label for="skillPython">python 🐍</label>
+      <input type="checkbox" id="skillPython" name="skills" value="python">
+    </fieldset>
+    <button type="button">more info</button>
+    <fieldset>
+      <legend>Legal</legend>
+      <label for="conditions">Terms and conditions</label>
+      <input type="checkbox" id="conditions" name="conditions">
+      <label for="marketing">Marketing list</label>
+      <input type="checkbox" id="marketing" name="marketing">
+    </fieldset>
+
+    <textarea name="about" id="about" placeholder="description"></textarea>
 
     <input type="submit" value="registro">
   </form>
