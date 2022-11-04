@@ -17,7 +17,7 @@
 }
 
 .navbar .navbar__list {
-  display: flex;
+  display: none;
 }
 
 .container {
@@ -34,4 +34,31 @@
   height: 60px;
   margin: 0 20px;
   background-color: red;
+}
+
+/* media queries */
+@media only screen and (min-width: 450px) {
+  .navbar .navbar__list {
+    display: flex;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+@media print {
+  .navbar {
+    display: none;
+  }
+  section p {
+    font-size: 16px;
+  }
 }
