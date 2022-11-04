@@ -21,4 +21,34 @@
 .card p {
   font-size: 10px !important;
 }
-/* Descanso 15 mins */
+:root {
+  --main-color: rgb(93, 24, 255);
+  --main-color-text: #FFF;
+}
+/* footer */
+.footer {
+  background-color: var(--main-color);
+  text-align: center;
+  width: 100vw;
+  /* border: 10px solid red;*/
+  padding: 20px 0px;
+  margin: 40px 0 0 0;
+  /*
+  position: absolute;
+  top: 0;
+  left: 20px;
+  position: fixed;
+  top: 0;
+  */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.footer .link {
+  font-style: italic;
+  font-size: 16px;
+  color: var(--main-color-text);
+  /* color: #fff; */
+}
